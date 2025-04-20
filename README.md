@@ -86,14 +86,19 @@ This project is licensed under the [MIT License](LICENSE). See the `LICENSE` fil
 
 ## Acknowledgements
 
-* **[Mention any individuals, libraries, APIs, or resources that significantly helped in the development of this project.]**
-* **[If you used any open-source projects, give them credit here.]**
+We would like to express our sincere gratitude to the following resources and tools that were instrumental in the development of Summerify Pro:
+
+* **Hugging Face:** We leveraged the powerful models and infrastructure provided by the Hugging Face ecosystem. Their open-source libraries and pre-trained models significantly accelerated our development process in the realm of Natural Language Processing and Large Language Models.
+
+* **Google Gemini API:** We utilized the cutting-edge capabilities of the Google Gemini API for its advanced text summarization and generation functionalities. The Gemini API played a crucial role in enabling Summerify Pro to produce concise and coherent summaries of both YouTube and audio transcripts.
+
+We appreciate the contributions of the researchers and developers behind these platforms, which have made it possible to build innovative solutions like Summerify Pro.
 
 ## Contact
 
-* **[Your Name/Organization Name]**
-* **[Your Email Address (optional)]**
-* **[Link to your GitHub profile (optional)]**
+* **Prof Ram Meghe College of Engineering and Managemnt -Badnera**
+* **kirtimopari@gmail.com**
+* **(https://github.com/moparikirti0103)**
 
 ---
 
