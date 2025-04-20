@@ -1,0 +1,43 @@
+.footer {
+  background-color: transparent; /* Set background to transparent */
+  color: white;
+  padding: 40px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Optional: Adds a subtle border to the top */
+}
+
+.footer h5 {
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+}
+
+.footer p {
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  background-color: transparent; /* Keep bottom section transparent */
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Optional: Adds a subtle border */
+}
+
+.footer-bottom p {
+  margin: 0;
+}

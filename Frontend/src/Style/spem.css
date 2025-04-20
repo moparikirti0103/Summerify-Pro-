@@ -1,0 +1,83 @@
+/* General Styles */
+/* Container for the feature blocks */
+.feature-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  width: 100%;
+}
+
+/* Style for image-side */
+.feature-container .image-side {
+  width: 50%;
+  padding: 20px;
+}
+
+.feature-container .image-side img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Style for content-side */
+.feature-container .content-side {
+  width: 50%;
+  padding: 20px;
+}
+
+/* Styling for the heading and paragraphs */
+.feature-container .content-side h3 {
+  font-size: 2rem;
+  color: #16a085;
+  margin-bottom: 20px;
+}
+
+.feature-container .content-side p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.feature-container .content-side ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.feature-container .content-side ul li {
+  font-size: 1rem;
+  color: #16a085;
+  margin-bottom: 10px;
+}
+
+/* Zigzag Pattern */
+.zigzag .feature-container:nth-child(even) {
+  flex-direction: row-reverse; /* Reverse the order of image and content */
+}
+
+/* Footer Section */
+footer {
+  background-color: #16a085;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feature-container {
+    flex-direction: column; /* Stack the content vertically */
+    padding: 20px;
+  }
+
+  .feature-container .image-side,
+  .feature-container .content-side {
+    width: 100%; /* Make each part take full width */
+    margin-bottom: 20px;
+  }
+}

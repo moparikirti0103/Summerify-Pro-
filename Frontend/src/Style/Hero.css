@@ -1,0 +1,120 @@
+/* Hero Section Background */
+.hero-section {
+  /* background: linear-gradient(45deg, rgba(43, 138, 242, 0.8), rgba(0, 188, 212, 0.8)); Transparent Blue to Teal Gradient */
+  color: white;
+  padding: 40px 20px;
+  position: relative;
+  height: 50vh; /* Set height to half of the screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  backdrop-filter: blur(10px); /* Optional: Blurs the background for a frosted effect */
+}
+
+/* Hero Container */
+.hero-container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  z-index: 2;
+}
+
+/* Title Animation */
+.hero-title {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 2s ease-out;
+}
+
+/* Description Animation */
+.hero-description {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-weight: 300;
+  animation: fadeIn 2s ease-out 0.5s;
+}
+
+/* Button Animation */
+.btn-summarize {
+  background-color: #ff5722; /* Orange */
+  color: white;
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-summarize:hover {
+  background-color: #e64a19; /* Darker orange on hover */
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Document Text */
+.document-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  opacity: 0;
+  animation: fadeIn 2s ease-out 1s forwards;
+}
+
+/* Animation for fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styling */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-description {
+    font-size: 1.2rem;
+  }
+  .btn-summarize {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-description {
+    font-size: 1rem;
+  }
+  .btn-summarize {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-description {
+    font-size: 0.9rem;
+  }
+  .btn-summarize {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}

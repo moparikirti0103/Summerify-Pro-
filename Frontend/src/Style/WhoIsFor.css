@@ -1,0 +1,104 @@
+/* Overall section styling with transparent background and subtle gradient */
+.tldr-this-for {
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.1), rgba(0, 123, 255, 0.2));
+  padding: 50px 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(253, 251, 251, 0.1);
+}
+
+/* Heading styling */
+.tldr-this-for h2 {
+  font-size: 2.5rem;
+  color: #16a085;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Description paragraph styling */
+.tldr-this-for p {
+  font-size: 1rem;
+  color: #f8f2f2;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* Responsive Flexbox grid for use cases */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Individual card styling */
+.use-case-item {
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #e0e0e0;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.use-case-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.use-case-item h3 {
+  font-size: 1.35rem;
+  color: #333;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.use-case-item p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.use-case-icon {
+  font-size: 50px;
+  color: #007bff;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.use-case-item:hover .use-case-icon {
+  color: #0056b3;
+}
+
+/* Responsive Design */
+.col-md-4 {
+  flex: 1 0 31%;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .col-md-4 {
+    flex: 1 0 100%;
+  }
+}
+
+/* Button styling (if you use any) */
+.button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}

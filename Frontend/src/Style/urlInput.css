@@ -1,0 +1,89 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/* Main Input Container */
+.url-input-container {
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: transparent;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.3); /* Transparent border */
+}
+
+/* URL Input Styles */
+.url-input-field {
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 1.1rem;
+  border: 1px solid #ddd;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  background-color: transparent; /* Transparent background */
+  color: #fff;
+}
+
+.url-input-field::placeholder {
+  color: #ccc;
+}
+
+.url-input-field:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Summarize Button Styling */
+.url-input-container .btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 15px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.url-input-container .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.url-input-container .text-muted {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .url-input-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .url-input-container h3 {
+    font-size: 1.6rem;
+  }
+
+  .url-input-field {
+    font-size: 1rem;
+  }
+
+  .url-input-container .btn-primary {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
